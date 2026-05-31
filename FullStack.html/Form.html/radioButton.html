@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <!-- radio elment -->
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">Mango</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <button>submit</button>
+        </div>
+        <hr>
+        <div>
+            <!--checkbox-->
+            choose your fruit: 
+            <input type="checkbox" name="fruit" id="mango" value="mango">
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="fruit" id="mango" value="mango">
+            <label for="mango">Mango</label>
+            <input type="checkbox" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <button>submit</button>
+        </div>
+        <div>
+            <!--Select (dropdown) element-->
+            choose your country
+            <select name="countary" id="country">
+                <option>select option </option>
+                <option value="hindustan">India</option>
+                <option value="Aus">Australia</option>
+                <option value="Eng">England</option>
+                <option value="c">china</option>
+            </select>
+        </div>
+        <button>submit</button>
+        <div>
+            <!--range input element-->
+            choose you volume
+            <label for="volume">select Volume</label>
+            <input type="range" min="0" max="100" name="vol" step="10" value="70">
+        </div>
+        <button>submit</button>
+        <div>
+            <label for="feedback">Plese add your valuable feedback:</label>
+            <textarea name="feedback" id="feedback" placeholder="write you feedback"></textarea>
+        </div>
+        <button>submit</button>
+    </form>
+</body>
+</html>
