@@ -1,0 +1,21 @@
+p{
+    background-color: brown;
+    text-align: center;
+    color: red;
+    font-size: georgia;
+    line-height: 30px;
+}
+h{
+    text-align: center;
+}
+h1{
+    color: black;
+}
+a{
+    color: rgb(0, green, 0);
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: blueviolet;
+}
