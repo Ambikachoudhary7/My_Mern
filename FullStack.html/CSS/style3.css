@@ -1,0 +1,32 @@
+#mainTopic{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+h1, h3, h5{
+    font-family: Georgia, arial;
+    font-size: 40px;
+}
+body, p{
+    color: white;
+    background-color: cornflowerblue;
+}
+div button{
+    color: azure;
+    background-color: purple;
+}
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+p:nth-last-of-type(odd){
+    color: yellow;
+}
+h1::first-letter{
+    color: red;
+    font-weight: bold;
+}
+#yes[type="checkbox"]:checked + label {
+    color: red;
+}

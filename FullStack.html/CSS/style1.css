@@ -1,0 +1,25 @@
+*{
+    font-family: courier new;
+}
+h1{
+    color: #1b74e4 !important;
+}
+/*  Agar id sa search karta ho to (#) eska use karo*/
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+
+/* ya hoga id sa styla karna ka syntax eak barmai do ya jada ka */
+/* #login, #register{
+    background-color: aqua;
+} */
+
+/* par ham eakbar mai eak sa jada mai style karna ka liya class attribute ka use karenga kunki eskayahi feture hai ki ya unique nahi hota hai id uniqueue hota hai or class ko use karna time ham eska sath kita hai (.class name) */
+.userbtn{
+    background-color: aqua;
+}
+h1{
+    color: rgb(0, 255, 136);
+    /* it cant be change because before we put his color is important thats why it not change */
+}

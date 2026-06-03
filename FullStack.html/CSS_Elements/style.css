@@ -1,0 +1,98 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    background-color: antiquewhite;
+}
+h3{
+    color: blue;
+}
+h1{
+    color: #b92b27;
+}
+#Login{
+    color: rgb(205, 206, 255);
+    background-color: blueviolet;
+}
+#signup{
+    color: aquamarine;
+    background-color: black;
+}
+/*  class selector:-> it used to group and change all of them */
+.upvote{
+    color: blanchedalmond;
+    background-color: brown;
+}
+/*  id selector :-> unique all have different*/
+#myid{
+    color: green;
+    background-color: white;
+}
+/*  decendent selector */
+a{
+    color: yellow;
+}
+/*  adjecent sibiling combinator */
+p+h3{
+    text-decoration: coral underline;
+}
+/*  child combinator:-> which provide style on child */
+div > input{
+    background-color: chartreuse;
+}
+nav a{
+    color: rgb(65, 0, 139);
+}
+/*  Attribute selector */
+input[type="text"]{
+    color: darkkhaki;
+}
+input[type="password"]{
+    color: cyan;
+}
+input[type]{
+    background-color: deeppink;
+}
+
+/*  pseduo class:- it is add to selector it work to like when our coursor moving any button  or text they color will we change type:- hover, active, checked, etc..*/
+span :hover{
+    background-color:green;
+    color: black;
+}
+h3:hover{
+    text-decoration: overline;
+}
+p:active{
+    color: darkturquoise;
+    font-weight: bold;
+}
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+div:nth-of-type(1){
+    /* type in bracket :- 2n, 3n, 6n 2n+1: it in that sequence*/
+    background-color: black;
+}
+/* pseudo element :- it change style at an specific place */
+h1::first-letter{
+    color: #27b94b;
+    font-weight: bold;
+}
+ p ::first-line{
+    color: #6127b9;
+}
+p::selection{
+    background-color: yellowgreen;
+}
+
+/* it cant be change because before we put his color is important thats why it not change */
+h1{
+    color: #b92b27 !important;
+}
+
+/* inheritance share property of another level is called inheritance like (div>p>ul>li)
+so, when we change in div style it share all level style because it is behave like parents */
+div:nth-of-type(2) {
+    background-color: yellow;
+}
