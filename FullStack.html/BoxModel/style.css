@@ -1,0 +1,35 @@
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    /* border-top: 5px aqua; put any specific bodr colior*/
+    border-radius: 10px;
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    /* border-radius: 50px; */
+    /* border-radius: 100%;  it used to make circle */
+    /* border-top-right-radius: 50px;  it will be use top set any specific corner radius*/
+
+    margin: 10px 20px 30px 40px;
+}
+h1{
+   /* border-width: 5px;
+   border-style: dashed;
+   border-color: green; */
+
+   /* short form */
+   border: 5px solid orange;
+   margin: 0;
+}
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-left: 25px;
+    border-right: 25px;
+    background-color: yellow;
+}
