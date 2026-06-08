@@ -1,21 +1,21 @@
-#outer{
+#container{
     height: 200px;
     width: 70px;
     border: 2px solid black;
 }
-.inner{
+.color{
     height: 50px;
     width: 50px;
     border: 2px solid black;
     margin: 10px;
     border-radius: 50%;
 }
-#inner1{
+#red1{
     background-color: red;
 }
-#inner2{
+#green1{
     background-color: green;
 }
-#outer2{
+#yellow1{
     background-color: yellow;
 }
