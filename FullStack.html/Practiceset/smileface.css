@@ -1,0 +1,31 @@
+.smile{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 50px;
+}
+.lefts, .rights{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    right: 175px;
+}
+.rights{
+    left: 300px;
+}
+.mouth{
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
