@@ -1,0 +1,42 @@
+#pets{
+    height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards{
+    height: 700px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    background-color: pink;
+}
+img,p{
+    height: 350px;
+    width: 550px;
+    border-radius: 10%;
+    margin-top: 5%;
+    font-size: large;
+}
+h1{
+ color: brown;
+}
+span{
+    color: brown;
+}
+p{
+    text-align: left;
+    margin: 20px;
+    padding: 0;
+}
+h3{
+    text-align: left;
+    margin: 20px;
+    font-size: 30px;
+}
+@media (max-width: 390px){
+    #pets{
+        flex-wrap: wrap; /* it help us to how look in phone our page that why we use media and wrap are used to show our page in next line */
+    }
+}
