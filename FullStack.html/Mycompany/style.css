@@ -1,0 +1,42 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+
+}
+.container{
+    height: 1000px;
+    width: 1000px;
+    background-color: white;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.boxs{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.box1{
+    height: 40px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: yellow;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.box2{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    
+}
