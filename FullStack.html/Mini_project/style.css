@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Google Sans", sans-serif;
+}
+.main_box{
+    /* background: url("https://media.istockphoto.com/id/843408508/photo/photography-camera-lens-concept.jpg?s=612x612&w=0&k=20&c=-tm5TKrPDMakrT1vcOE-4Rlyj-iBVdzKuX4viFkd7Vo=") ;  */
+    background: url("https://www.ormsdirect.co.za/cdn/shop/files/005_copy_af1c64b4-73dd-48e9-b07d-27d476a8523c.webp?v=1781259680&width=3840");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+.sidebar_menu{
+    position: fixed;
+    /* left: -350px; */
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255 , 0.5);
+    box-shadow: 0 0 2px rgba(255, 255 ,255, 0.5);
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);    
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sidebar_menu .btn_two i{
+    position: absolute;
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    left: 265px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu i, a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media{
+    color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.sidebar_menu .social_media i{
+    color: black;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);  
+}
+.btn_one i:hover{
+    font-size: 40px;
+}
+.btn_two i:hover{
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+ 
