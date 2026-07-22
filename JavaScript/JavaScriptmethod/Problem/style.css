@@ -1,0 +1,17 @@
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.divs{
+    border: 5px solid black;
+    background-color: pink;
+}
+#btn{
+    color: blue;
+}
+.btnStyle{
+    color: skyblue;
+    background-color: white;
+}
