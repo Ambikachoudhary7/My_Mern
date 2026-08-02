@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hellow</h1>
+</body>
+<script>
+    function saveInDB(data, sucess, fail){
+        let speed = Math.floor(Math.random()*10)+1;
+        if(speed>4){
+            sucess();
+        }else{
+            fail();
+        }
+    }
+    saveInDB("apnaColege", ()=>{
+        console.log("Sucessful: you data was saved");
+        saveInDB("Ambika", ()=>{
+            console.log("Ambika: Add your data");
+            saveInDB("Saurabh", ()=>{
+                console.log("Saurabh: Add you data");
+            }, ()=>{
+                console.log("Failure: your Internet is week");
+            });
+        }, ()=>{
+            console.log("Failure: Internet is slow");
+        })
+    }, ()=>{
+        console.log("Failure: Internet is week");
+    });
+</script>
+</html>

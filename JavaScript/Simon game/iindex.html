@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <style>
+        .container {
+            height: auto;
+            width: auto;
+            margin: 60px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 8px solid black;
+            border-radius: 20px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .item1 {
+            background-color: red;
+        }
+
+        .item2 {
+            background-color: yellow;
+        }
+
+        .item3 {
+            background-color: orangered;
+        }
+
+        .item4 {
+            background-color: aqua;
+        }
+
+        .flash {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simon Game</h1>
+    <h2>Press any key to start game</h2>
+    <div class="container">
+        <div class="box item1"></div>
+        <div class="box item2"></div>
+        <div class="box item3"></div>
+        <div class="box item4"></div>
+    </div>
+    <script>
+        let gameSeq = [];
+        let userSeq = [];
+        let btns = ["red", "yellow", "orangered", "aqua"];
+        let start = false;
+        let level = 0;
+        let h2 = document.querySelector("h2");
+        document.addEventListener("keypress", function () {
+            if (start == false) {
+                console.log("game is stared");
+                start = true;
+
+                levelUp();
+            }
+        });
+        function btnFalsh(btn) {
+            btn.classList.add("flash");
+            setTimeout(function () {
+                btn.classList.remove("flash");
+            }, 1000);
+        }
+        function levelUp() {
+            level++;
+            h2.innerText = `Level ${level}`;
+            let randomInx = Math.floor(Math.random() * 3);
+            let randcolor = btn[randomInx];
+            let randBtn = document.querySelector(`.${randcolor}`);
+            console.log(randBtn);
+            console.log(randcolor);
+            console.log(randomInx)
+            btnFalsh(randBtn);
+
+        }
+        function btnPress(){
+            console.log("btn was Pressed");
+        }
+        let allBtn = document.querySelectorAll(".btn");
+
+    </script>
+</body>
+
+</html>
