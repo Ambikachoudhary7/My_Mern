@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Promises</h1>
+    <script>
+        function saveToDB(data) {
+            return new Promise((resolve, reject) => {
+                let speed = Math.floor(Math.random() * 10 + 1);
+                if (speed > 4) {
+                    resolve("Sucessful: stored data");
+                } else {
+                    reject("Failure: Internet problem");
+                }
+            });
+        }
+        //    let request =  saveToDB("Ambika");
+        //    request.then(()=>{
+        //         console.log("Promises was Accepted");
+        //         console.log(request);
+        //    })
+        //    .catch(()=>{
+        //     console.log("Promise was rejected");
+        //     console.log(request);
+        //    });
+
+        // we also call without storing any valiable
+        saveToDB("Ambika")
+            .then(() => {
+                console.log("Promises was Accepted");
+            })
+            .catch(() => {
+                console.log("Promise was rejected");
+            });
+    </script>
+</body>
+
+</html>
