@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Promises</h1>
+    <script>
+        function saveToDB(data) {
+            return new Promise((resolve, reject) => {
+                let speed = Math.floor(Math.random() * 10 + 1);
+                if (speed > 4) {
+                    resolve("Sucessful: stored data");
+                } else {
+                    reject("Failure: Internet problem");
+                }
+            });
+        }
+        // saveToDB("Ambika")
+        //     .then(() => {
+        //         console.log("Promises was Accepted");
+        //         saveToDB("Saurabh").then(()=>{
+        //             console.log("Sucessful: strore data");
+        //             saveToDB("ravi").then(()=>{
+        //                 console.log("Sucessful: store data");
+        //             })
+        //         })
+        //     })
+        //     .catch(() => {
+        //         console.log("Promise was rejected");
+        //     });
+
+        // improve version to write same calling function
+
+        saveToDB("Ambika")
+            .then((result) => {
+                console.log("Promises was Accepted");
+                console.log("Result is: ", result);
+                console.log("Data1 Stored");
+                return saveToDB("Saurabh")
+            })
+            .then((result)=>{
+                console.log("data2 Stored");
+                console.log("Result is : ", result)
+                return saveToDB("ravi");
+            })
+            .then((result)=>{
+                console.log("data3 stored");
+                console.log("result", result);
+            })
+    
+            .catch((error) => {
+                console.log("Error is: ", error);
+                console.log("Promise was rejected");
+            });
+    </script>
+</body>
+
+</html>
