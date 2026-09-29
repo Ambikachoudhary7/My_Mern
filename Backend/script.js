@@ -5,7 +5,11 @@
 
 // console.log(process.argv);
 
-const math = require("./math");
-console.log(math.sum(2, 4));
-console.log(math.mul(4, 8));
-console.log(math.number);
+// const math = require("./math");
+// console.log(math.sum(2, 4));
+// console.log(math.mul(4, 8));
+// console.log(math.number);
+
+const info = require("./Fruits");
+
+console.log(info);
