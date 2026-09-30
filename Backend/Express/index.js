@@ -34,15 +34,35 @@ app.get("/apple", (req, res)=>{
 });
 
 app.get("/orange", (req, res)=>{
-    res.send("you contacted orange path");
+    res.send("you contacted orange path to Applicatinon");
 });
 
-app.get("*", (req, res)=>{
-    res.send("you Write wrong Path");
-})
+// this add when we add wrong route *
+// app.get("*", (req, res)=>{
+//     res.send("you Write wrong Path");
+// })
 
 // post :- use to send anything to server
 app.post("/", (req, res)=>{
     res.send("you sent a post request to root");
 });
 
+
+// path parameter
+app.get("/:username/:id", (req, res)=>{
+    let {username, id} = req.params;
+    res.send(`Welcome to the page of @ ${username}.`);
+
+    // let htmlstr = `<h1>Welcome to the page of @ ${username}.</h1>`
+    // res.send(htmlstr);
+});
+
+// query String
+
+app.get("/search", (req, res)=>{
+    let {q} = req.query;
+    // console.log(req.query);
+    // res.send("no result");
+
+    res.send(`<h1>Welcome to the Query ${q}.`);
+});
