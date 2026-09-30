@@ -9,14 +9,40 @@ app.listen(port, ()=>{
     console.log(`app listening on port ${port}`);
 });
 
-app.use((req, res) =>{
-    console.log("recieved response");
-    // res.send("<h1>Fruits</h1><ul><li>Orange</li> <li>Red</li></ul>"); // send response in html formate
-    // these are the multiple way to send our request and response in server 
-    res.send("This is first Experience of Express.js"); // send response in String form
-    // res.send({ // send response in object form
-    //     name: "Ambika",
-    //     roll: 34,
-    //     marks: 98,
-    // });
+// -> use all provide response for whole page or whole web response
+// app.use((req, res) =>{ 
+//     console.log("recieved response");
+//     // res.send("<h1>Fruits</h1><ul><li>Orange</li> <li>Red</li></ul>"); // send response in html formate
+//     // these are the multiple way to send our request and response in server 
+//     res.send("This is first Experience of Express.js"); // send response in String form
+//     // res.send({ // send response in object form
+//     //     name: "Ambika",
+//     //     roll: 34,
+//     //     marks: 98,
+//     // });
+// });
+
+// routing
+// we use app.get() -> they provide specific route where we go and work 
+
+app.get("/", (req, res)=>{
+    res.send("you contacted root path");
 });
+
+app.get("/apple", (req, res)=>{
+    res.send("you contacted apple path");
+});
+
+app.get("/orange", (req, res)=>{
+    res.send("you contacted orange path");
+});
+
+app.get("*", (req, res)=>{
+    res.send("you Write wrong Path");
+})
+
+// post :- use to send anything to server
+app.post("/", (req, res)=>{
+    res.send("you sent a post request to root");
+});
+
