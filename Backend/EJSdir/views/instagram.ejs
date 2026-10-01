@@ -9,5 +9,12 @@
     <h1>This page belongs to @<%= username %></h1>
     <button>Follow</button>
     <button>Message</button>
+
+    <h2>Account that follow you: </h2>
+    <ul>
+        <% for(let name of followers){ %> <!--this is loop in Ejs-->
+        <li><%= name %></li>
+        <%}%>
+    </ul>
 </body>
 </html>

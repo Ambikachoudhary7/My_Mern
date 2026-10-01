@@ -23,7 +23,8 @@ app.set("/hello", (req, res)=>{
 
 app.get("/ig/:username", (req, res)=> {
     let {username} = req.params;
-    res.render("instagram.ejs", {username});
+    let followers = ["Ambika", "Rahul", "Dhoni", "Sahil", "Ravi"];
+    res.render("instagram.ejs", {username, followers});
 });
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
