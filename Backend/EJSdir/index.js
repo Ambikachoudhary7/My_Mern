@@ -19,6 +19,12 @@ app.set("/hello", (req, res)=>{
     res.send("hello");
 });
 
+// instagram layout
+
+app.get("/ig/:username", (req, res)=> {
+    let {username} = req.params;
+    res.render("instagram.ejs", {username});
+});
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
 });
