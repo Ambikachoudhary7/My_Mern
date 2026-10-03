@@ -29,3 +29,5 @@ app.get("/ig/:username", (req, res)=> {
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
 });
+
+// make page which show insta id and post of the user

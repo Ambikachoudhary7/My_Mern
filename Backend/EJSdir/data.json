@@ -1,0 +1,50 @@
+{
+    "accounts": [
+        {
+            "id": "dog",
+            "instagram_handle": "@dog",
+            "followers": 1250000,
+            "following": 320,
+            "posts": [
+                {
+                    "post_id": "dog_post_1",
+                    "image_url": "https://example.com/images/dog_park.jpg",
+                    "likes": 45200
+                },
+                {
+                    "post_id": "dog_post_2",
+                    "image_url": "https://example.com/images/dog_sleeping.jpg",
+                    "likes": 68100
+                },
+                {
+                    "post_id": "dog_post_3",
+                    "image_url": "https://example.com/images/dog_playing_fetch.jpg",
+                    "likes": 52900
+                }
+            ]
+        },
+        {
+            "id": "cat",
+            "instagram_handle": "@cat",
+            "followers": 980000,
+            "following": 150,
+            "posts": [
+                {
+                    "post_id": "cat_post_1",
+                    "image_url": "https://example.com/images/cat_window.jpg",
+                    "likes": 39400
+                },
+                {
+                    "post_id": "cat_post_2",
+                    "image_url": "https://example.com/images/cat_box.jpg",
+                    "likes": 81200
+                },
+                {
+                    "post_id": "cat_post_3",
+                    "image_url": "https://example.com/images/cat_stretching.jpg",
+                    "likes": 47600
+                }
+            ]
+        }
+    ]
+}
