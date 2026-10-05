@@ -1,0 +1,14 @@
+h1{
+    color: brown;
+}
+.post{
+    background-color: whitesmoke;
+    height: 100px;
+    width: 150px;
+}
+.user{
+    color: red;
+}
+.content{
+    color: chocolate;
+}
