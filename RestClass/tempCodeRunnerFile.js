@@ -20,19 +20,16 @@ app.use(express.static(path.join(__dirname, "public")));
 let posts = [
     
     {
-        Id: "1b",
         username : "apnaCollege",
         content : "I love coding",
     },
 
      {
-        id: "2b",
         username : "Ambika choudhary",
         content : "I complete my internship in 5th sem",
     },
 
      {
-        id: "3b",
         username : "Ravi choudhary",
         content : "I got internship",
     }
@@ -47,19 +44,10 @@ app.get("/posts/new", (req, res)=>{
     res.render("new.ejs")
 });
 
-app.get("/post/id:", (req, res)=>{
-
-    let {id} = req.params;
-    let post = posts.find((p) => id===p.id);
-    console.log(post);
-    res.render("Show.ejs", {post});
-
-})
-
 app.post("/posts", (req, res)=>{
     let {username, content} = req.body;
     posts.push({username, content});
-    res.redirect("/posts");
+    res.send("post request working");
 });
 
 app.listen(port, () => {
